@@ -15,3 +15,4 @@ organization.smtp_settings = {
   authentication: :plain,
   enable_starttls_auto: true
 }
+organization.save!
