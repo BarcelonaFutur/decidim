@@ -32,6 +32,7 @@ end
 group :production do
   gem 'passenger'
   gem 'fog-aws'
+  gem 'aws-sdk-s3'
   gem 'dalli'
   gem 'sendgrid-ruby'
   gem 'newrelic_rpm'
