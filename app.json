@@ -11,7 +11,7 @@
     "sendgrid:starter"
   ],
   "scripts": {
-    "postdeploy":"rake db:schema:load db:migrate db:seed"
+    "postdeploy": "rake db:schema:load db:migrate db:seed"
   },
   "env": {
     "AWS_ACCESS_KEY_ID": {
@@ -32,10 +32,10 @@
       "description": "Username for a custom CensusAuthenticationHandler, if needed",
       "required": false
     },
-    "HERE_APP_ID": {
+    "GEOCODER_LOOKUP_APP_ID": {
       "required": false
     },
-    "HERE_APP_CODE": {
+    "GEOCODER_LOOKUP_APP_CODE": {
       "required": false
     },
     "HEROKU_APP_NAME": {
