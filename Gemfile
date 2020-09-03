@@ -4,13 +4,11 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.20.0"
+gem "decidim", "0.22.0"
 # gem "decidim-consultations", "0.20.0"
 # gem "decidim-initiatives", "0.20.0"
 
 gem "bootsnap", "~> 1.3"
-
-gem "puma", "~> 3.12.6"
 gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
@@ -20,7 +18,7 @@ gem "geocoder", "~> 1.5.2"
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "decidim-dev", "0.20.0"
+  gem "decidim-dev", "0.22.0"
 end
 
 group :development do
@@ -32,7 +30,6 @@ group :development do
 end
 
 group :production do
-  gem 'passenger'
   gem 'fog-aws'
   gem 'dalli'
   gem 'sendgrid-ruby'
