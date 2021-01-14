@@ -10,6 +10,7 @@ gem "decidim", DECIDIM_VERSION
 # gem "decidim-consultations", "0.20.0"
 # gem "decidim-initiatives", "0.20.0"
 
+gem "puma"
 gem "bootsnap", "~> 1.3"
 gem "uglifier", "~> 4.1"
 
