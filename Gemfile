@@ -3,8 +3,10 @@
 source "https://rubygems.org"
 
 ruby RUBY_VERSION
+DECIDIM_VERSION = { git: "https://github.com/decidim/decidim", tag: "release/0.23-stable" }
 
-gem "decidim", "0.22.0"
+gem "decidim", DECIDIM_VERSION
+
 # gem "decidim-consultations", "0.20.0"
 # gem "decidim-initiatives", "0.20.0"
 
@@ -18,7 +20,7 @@ gem "geocoder", "~> 1.6.1"
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "decidim-dev", "0.22.0"
+  gem "decidim-dev", DECIDIM_VERSION
 end
 
 group :development do
